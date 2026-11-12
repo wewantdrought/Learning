@@ -1,11 +1,17 @@
-# C++ Practice Session — November 10, 2026
+# C++ Learning Block — Created November 10, 2026
+
+## Status
+
+In progress. This block can continue across multiple days; its folder name is
+the date it was created, not a deadline or a requirement to finish in one day.
 
 ## Context
 
-This session includes both the lesson and its practice. Sections 1–4 of
-`CPP_PRIMER.md` are today's lesson; stop before Section 5. The purpose of the
-practice is to turn that syntax into working knowledge, so no hash tables or new
-algorithms are required yet.
+This learning block includes both the lesson and its practice. Sections 1–4 of
+`CPP_PRIMER.md` are in scope; stop before Section 5. The purpose of the practice
+is to turn that syntax into working knowledge, so no hash tables or new
+algorithms are required yet. Continue in this folder on later days until the
+block is complete.
 
 ## Session files
 
@@ -71,18 +77,29 @@ The complete questions, restrictions, and success checks are comments in
 
 ## What I practiced
 
-Not started yet. Update this section with the exercises completed, mistakes made,
-and ideas that became clearer. Do not record an exercise as practiced merely
-because its instructions were read.
+- Exercise 1 was attempted: wrote `printValues` and a `main()` that creates the
+  sample vector and calls the function. The program compiled and printed the
+  expected values. Initially the shell prompt's `%` appeared right after the
+  output because there was no newline; this was a shell prompt, not program text.
+- The exercise remains unchecked until I confirm I understand and consider it
+  complete. Continue adding actual practice, mistakes, and discoveries here.
+- I will make and push my own Git commits; use this record to track learning, not
+  to imply that files have been committed.
 
 ## Questions and sticking points
 
-- Add questions here as they arise.
+- How to distinguish program output from the shell prompt when the program does
+  not print a final newline.
+- Add new questions here as they arise.
 
 ## Where to pick up next session
 
-1. Finish any unchecked exercises from this session.
-2. Redo the hardest exercise once without referring to the earlier solution.
-3. If all six exercises feel comfortable, begin Section 5 of the primer:
+1. Review Exercise 1 and make sure I can explain its parameter, loop, spacing,
+   and output before checking it off.
+2. Continue with Exercise 2 in `practice.cpp`; do not rush to finish the whole
+   learning block in one day.
+3. Later, finish any remaining exercises and redo the hardest one without
+   referring to a solution.
+4. If all six exercises feel comfortable, begin Section 5 of the primer:
    hash tables and frequency maps.
 

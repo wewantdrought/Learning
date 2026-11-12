@@ -13,7 +13,8 @@ session.
 
 ## Directory structure
 
-Each session gets one date-based directory under `learning`:
+Each learning block gets one directory under `learning`, named with the date it
+was created (`YYYY-MM-DD`):
 
 ```text
 learning/
@@ -25,8 +26,10 @@ learning/
     └── lesson or reference files
 ```
 
-All material specific to a session belongs in that session's directory. Lessons
-and practice are not split into separate top-level folders.
+The block may span multiple calendar days. Keep using its original folder until
+its learning goals and handoff are complete; do not create a new folder just
+because the date changed. All material specific to that block belongs in its
+directory. Lessons and practice are not split into separate top-level folders.
 
 ## Required session files
 
@@ -140,12 +143,17 @@ compile never runs an older executable.
 - Prefer building over passively rereading.
 - Practice new ideas in small, ordered steps.
 - Build C++ programs from scratch to learn the full program structure.
-- Keep lesson, practice, and reflection together by session date.
+- Keep lesson, practice, and reflection together in a learning-block folder named
+  for its creation date; a block may span multiple days.
 - Put every complete practice prompt in `practice.cpp`.
 - Put a writing area immediately below every practice prompt.
 - Keep a `run.sh` compile-and-run shortcut in every C++ session directory.
 - Do not introduce advanced material merely to make an exercise shorter.
 - Treat compiler errors as feedback and resolve them one at a time.
+- During tutoring, explain and guide the learner's code without editing it unless
+  the learner clearly asks for direct code changes.
+- The learner handles Git commits and pushes; provide instructions without
+  committing or pushing on their behalf unless explicitly asked.
 - Update this master document whenever the workflow changes.
 
 ## How to evolve this workflow
