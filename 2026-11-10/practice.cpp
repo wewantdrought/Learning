@@ -41,11 +41,10 @@ Expected output: 4 7 2 9 6
 void printValues(const vector<int>& nums) {
     for (int i = 0; i < static_cast<int>(nums.size()); ++i) {
         if (i > 0) {
-            cout << ' ';
+            cout << " ";
         }
         cout << nums[i];
     }
-    cout << '\n';
 }
 
 /*
@@ -64,6 +63,17 @@ Expected average: 5.6
 
 // Write Exercise 2 directly below.
 
+long long sumValues(const vector<int>& nums) {
+    long long res = 0;
+    for (long long i : nums) {
+        res += i;
+    }
+    return res;
+}
+
+double averageValue(const vector<int>& nums) {
+    return static_cast<double>(sumValues(nums)) / nums.size();
+}
 
 /*
 Exercise 3: Count even values
@@ -76,6 +86,7 @@ Expected result for 4, 7, 2, 9, 6: 3
 */
 
 // Write Exercise 3 directly below.
+
 
 
 /*
@@ -137,7 +148,10 @@ success check above.
 // Write main() directly below.
 
 int main(){
-    vector<int> nums = {4, 7, 2, 9, 6};
-    printValues(nums);
+    cout << "#1";
+    vector<int> nums1 = {4, 7, 2, 9, 6};
+    printValues(nums1);
+    
+    cout << "#2";
     return 0;
 }
