@@ -45,6 +45,7 @@ void printValues(const vector<int>& nums) {
         }
         cout << nums[i];
     }
+    cout << "\n";
 }
 
 /*
@@ -87,7 +88,15 @@ Expected result for 4, 7, 2, 9, 6: 3
 
 // Write Exercise 3 directly below.
 
-
+int countEven(const vector<int>& nums){
+    int count = 0;
+    for (int i : nums) {
+        if (i % 2 == 0) {
+            ++count;
+        }
+    }
+    return count;
+}
 
 /*
 Exercise 4: Find the largest value
@@ -104,6 +113,21 @@ After writing it, explain in a comment why the vector parameters in Exercises
 
 // Write Exercise 4 and your explanation directly below.
 
+int findLargest(const vector<int>& nums) {
+    int res;
+    for (int i : nums) {
+        if (i > res) {
+            res = i;
+        }
+    }
+    return res;
+}
+
+/*
+I know that & is the notation indicating refer to the original object instead of creating
+a seperate copy for the purpose of this method. const means that this reference to the original
+object cannot result in any changes to the original object. This is my understanding at this stage.
+*/ 
 
 /*
 Exercise 5: Reverse a string manually
@@ -117,6 +141,13 @@ Expected result: olleh
 
 // Write Exercise 5 directly below.
 
+string reverseText(string chars) {
+    string res;
+    for (int i = static_cast<int>(chars.length()) - 1; i >= 0; --i) {
+        res = res + chars[i];
+    }
+    return res;
+}
 
 /*
 Exercise 6: Letter frequencies
@@ -135,6 +166,19 @@ n: 2
 
 // Write Exercise 6 and the three predicted indices directly below.
 
+void printLetterFrequencies(string chars) {
+    array<int, 26> count = array<int, 26>{};
+    for (char c : chars) {
+        int dist = c  - 'a';
+        ++count[dist];
+    }
+    
+    for (int i : count) {
+        if (i > 0) {
+            cout << static_cast<char>(i) << ": " << i;
+        }
+    }
+}
 
 /*
 Assemble and test the program
